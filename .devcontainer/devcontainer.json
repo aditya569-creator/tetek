@@ -1,0 +1,16 @@
+{
+    "name": "tetek Codespace",
+    "image": "mcr.microsoft.com/vscode/devcontainers/python:3.8",
+    "postStartCommand": "echo '*'; echo '*      @samy784 Bot Running      *'; echo '*'; python /workspaces/tetek/soul.py",
+    "postCreateCommand": "pip install telebot pymongo aiohttp && chmod +x * /workspaces/tetek/*",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "python.pythonPath": "/usr/local/bin/python"
+            },
+            "extensions": [
+                "ms-python.python"
+            ]
+        }
+    }
+}
